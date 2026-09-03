@@ -1,0 +1,11 @@
+node_modules/
+.DS_Store
+*.log
+.idea/
+.vscode/
+webview/.gradle/
+webview/build/
+webview/app/build/
+storage/*.sqlite
+storage/*.sqlite-*
+storage/sessions/
