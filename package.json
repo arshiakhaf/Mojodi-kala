@@ -1,0 +1,16 @@
+{
+  "name": "mojodi-kala-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Optional PHP-Wasm preview server for the Mojodi-kala demo",
+  "scripts": {
+    "preview": "node preview-server.cjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@php-wasm/node": "^3.1.52",
+    "@php-wasm/universal": "^3.1.52"
+  }
+}
