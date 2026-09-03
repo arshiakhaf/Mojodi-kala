@@ -98,8 +98,8 @@
         modalTitle.textContent = product.title || 'جزئیات کالا';
         modalMeta.textContent = 'کد ' + (product.code || '') + ' · ' + (product.offers ? product.offers.length : 0) + ' پیشنهاد فروشنده';
         modalImage.src = product.image || 'assets/images/cylinder-head.svg';
-        modalImage.alt = 'تصویر آزمایشی ' + (product.title || 'کالا');
-        modalDescription.textContent = product.description || 'اطلاعات تکمیلی این کالا در نسخه نمایشی.';
+        modalImage.alt = 'تصویر ' + (product.title || 'کالا');
+        modalDescription.textContent = product.description || 'اطلاعات تکمیلی این کالا در سامانه.';
         if (modalProductPage) modalProductPage.href = 'product.php?id=' + encodeURIComponent(product.id);
         offerList.innerHTML = renderOffers(product.offers || []);
         modal.classList.add('is-open');

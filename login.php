@@ -166,11 +166,11 @@ $pageTitle = $mode === 'register' ? 'ثبت فروشگاه' : 'ورود فروش
                 </form>
 
                 <?php if ($mode === 'login'): ?>
-                    <div class="auth-demo"><strong>ورود آزمایشی برای ارائه</strong>شماره: <code>09120000001</code> &nbsp; رمز: <code>demo1234</code></div>
+                    <div class="auth-demo"><strong>اطلاعات ورود اولیه</strong>شماره: <code>09120000001</code> &nbsp; رمز: <code>demo1234</code></div>
                 <?php else: ?>
-                    <div class="auth-demo"><strong>نسخه نمایشی</strong>ثبت‌نام به دیتابیس SQLite وصل می‌شود و پس از ورود می‌توانید پیشنهاد کالا ثبت کنید.</div>
+                    <div class="auth-demo"><strong>راهنمای شروع کار</strong>پس از ثبت‌نام، می‌توانید پیشنهادهای کالا و موجودی فروشگاه را مدیریت کنید.</div>
                 <?php endif; ?>
-                <div class="auth-footer">با ورود یا ثبت‌نام، قوانین استفاده از سامانه را می‌پذیرید. اطلاعات این محیط برای نمایش اولیه و آزمایشی است.</div>
+                <div class="auth-footer">با ورود یا ثبت‌نام، قوانین استفاده از سامانه را می‌پذیرید. اطلاعات فروشگاه را پیش از انتشار عمومی تکمیل و تأیید کنید.</div>
             </section>
         </div>
     </main>

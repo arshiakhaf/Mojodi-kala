@@ -142,7 +142,7 @@ $formPayment = $editingOffer['payment'] ?? '';
                         <div class="detail-side-row"><span>شماره تماس</span><strong dir="ltr"><?= dash_e($user['phone']) ?></strong></div>
                         <div class="detail-side-row"><span>شهر اصلی</span><strong><?= dash_e($user['city']) ?></strong></div>
                     </div>
-                    <div class="portal-alert info" style="margin:18px 0 0;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01" stroke-linecap="round"/></svg><span>اطلاعات تماس و قیمت در این نسخه برای دموی اولیه هستند.</span></div>
+                    <div class="portal-alert info" style="margin:18px 0 0;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01" stroke-linecap="round"/></svg><span>قیمت و اطلاعات تماس پس از تأیید مدیریت منتشر می‌شوند.</span></div>
                     <a class="portal-link" href="index.php#search">دیدن نتیجه‌های سایت ←</a>
                 </aside>
             </div>

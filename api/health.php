@@ -10,7 +10,7 @@ header('Cache-Control: no-store');
 echo json_encode([
     'ok' => true,
     'service' => 'mojodi-kala',
-    'environment' => 'demo',
+    'environment' => 'catalog',
     'database' => app_db() instanceof PDO ? 'sqlite' : 'fallback-data',
     'time' => date(DATE_ATOM),
 ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);

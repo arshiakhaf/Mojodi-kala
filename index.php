@@ -213,7 +213,7 @@ if ($productJson === false) {
                     </div>
                     <div class="hero-note">
                         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M12 3 5 6v5c0 4.6 2.9 8.2 7 10 4.1-1.8 7-5.4 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        اطلاعات این صفحه نمونه و مناسب ارائه اولیه است
+                        اطلاعات موجودی به‌صورت روزانه به‌روزرسانی می‌شود
                     </div>
                 </div>
 
@@ -260,11 +260,11 @@ if ($productJson === false) {
             </div>
         </section>
 
-        <section class="stats-strip" aria-label="آمار نمونه سامانه">
+        <section class="stats-strip" aria-label="آمار سامانه">
             <div class="container">
                 <div class="stats-card">
-                    <div class="stat"><span class="stat-number"><?= persian_digits(count($products)) ?></span><span class="stat-label">کالای نمونه<br>برای جست‌وجو</span></div>
-                    <div class="stat"><span class="stat-number"><?= persian_digits($totalOffers) ?></span><span class="stat-label">پیشنهاد فعال<br>در این دموی نمونه</span></div>
+                    <div class="stat"><span class="stat-number"><?= persian_digits(count($products)) ?></span><span class="stat-label">کالای قابل جست‌وجو<br>در سامانه</span></div>
+                    <div class="stat"><span class="stat-number"><?= persian_digits($totalOffers) ?></span><span class="stat-label">پیشنهاد فعال<br>در سامانه</span></div>
                     <div class="stat"><span class="stat-number"><?= persian_digits(count($filterOptions['cities']) - 1) ?></span><span class="stat-label">شهر تحت پوشش<br>برای شروع کار</span></div>
                 </div>
             </div>
@@ -277,7 +277,7 @@ if ($productJson === false) {
                         <span class="section-kicker">جست‌وجوی ساده و حرفه‌ای</span>
                         <h2>کالا را با نام، کد یا خودرو پیدا کنید</h2>
                     </div>
-                    <p>برای دیدن نمونه نتیجه‌ها، یکی از عبارت‌های پیشنهادی را انتخاب کنید یا فیلترهای حرفه‌ای را باز کنید.</p>
+                    <p>یکی از عبارت‌های پیشنهادی را انتخاب کنید یا فیلترهای حرفه‌ای را باز کنید.</p>
                 </div>
 
                 <form class="search-box" method="get" action="index.php#results" id="searchForm">
@@ -349,7 +349,7 @@ if ($productJson === false) {
                             <?php if ($hasSearch): ?>
                                 برای <strong><?= e($q !== '' ? $q : 'فیلترهای انتخاب‌شده') ?></strong>، <?= persian_digits(count($filteredProducts)) ?> کالا و <?= persian_digits($filteredOfferCount) ?> پیشنهاد پیدا شد.
                             <?php else: ?>
-                                قیمت و شرایط نمونه از فروشگاه‌های منتخب؛ جزئیات هر کالا را باز کنید.
+                                قیمت و شرایط ثبت‌شده از فروشگاه‌های منتخب؛ جزئیات هر کالا را باز کنید.
                             <?php endif; ?>
                         </p>
                     </div>
@@ -379,7 +379,7 @@ if ($productJson === false) {
                         ?>
                             <article class="product-card">
                                 <div class="product-media">
-                                    <img src="<?= e($product['image']) ?>" alt="تصویر آزمایشی <?= e($product['title']) ?>" loading="lazy">
+                                    <img src="<?= e($product['image']) ?>" alt="تصویر <?= e($product['title']) ?>" loading="lazy">
                                     <span class="stock-badge"><?= persian_digits($visibleOffers) ?> پیشنهاد</span>
                                 </div>
                                 <div class="product-content">
@@ -446,7 +446,7 @@ if ($productJson === false) {
                 <div class="process-copy">
                     <span class="section-kicker">روند استفاده</span>
                     <h2>از جست‌وجو تا انتخاب، سه قدم ساده</h2>
-                    <p>این جریان برای نسخه نمایشی آماده شده و در نسخه نهایی می‌تواند به حساب کاربری، پنل فروشنده و دیتابیس متصل شود.</p>
+                    <p>این جریان برای خرید و تأمین سریع‌تر طراحی شده و اطلاعات در پنل فروشنده مدیریت می‌شود.</p>
                     <a class="process-link" href="#search">امتحانش کنید <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
                 </div>
                 <div class="steps">
@@ -479,15 +479,15 @@ if ($productJson === false) {
                         <span class="brand-mark"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="m5.5 10.5 10.5-5 10.5 5v11L16 27 5.5 21.5v-11Z" fill="white"/><path d="m5.5 10.5 10.5 6 10.5-6M16 16.5V27" stroke="#2467e8" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
                         <span class="brand-copy"><span class="brand-name">موجودی‌کالا</span><span class="brand-tagline">پیدا کن، مقایسه کن، مطمئن شو</span></span>
                     </a>
-                    <p>یک دموی فارسی و واکنش‌گرا برای جست‌وجو و مقایسه موجودی کالا میان فروشندگان.</p>
+                    <p>سامانه‌ای فارسی و واکنش‌گرا برای جست‌وجو و مقایسه موجودی کالا میان فروشندگان.</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-links-group"><strong>دسترسی سریع</strong><a href="#search">جست‌وجوی کالا</a><a href="#how-it-works">روند استفاده</a><a href="#about">مزیت‌های سامانه</a></div>
-                    <div class="footer-links-group"><strong>راهنما</strong><a href="#seller-cta">پنل فروشنده</a><a href="#home">درباره دموی نمونه</a><a href="#search">سؤالات متداول</a></div>
+                    <div class="footer-links-group"><strong>راهنما</strong><a href="#seller-cta">پنل فروشنده</a><a href="#home">درباره سامانه</a><a href="#search">سؤالات متداول</a></div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <span>© <?= date('Y') ?> موجودی‌کالا — نسخه نمایشی</span>
+                <span>© <?= date('Y') ?> موجودی‌کالا — سامانه مقایسه موجودی کالا</span>
                 <span class="footer-warning"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m12 4 9 16H3L12 4Z"/><path d="M12 9v5M12 17h.01" stroke-linecap="round"/></svg>قبل از هر معامله، اطلاعات و کالا را بررسی کنید.</span>
             </div>
         </div>
@@ -506,7 +506,7 @@ if ($productJson === false) {
                 <p class="modal-description" id="modalProductDescription"></p>
                 <div class="modal-actions"><a class="btn btn-light" id="modalProductPage" href="#">مشاهده صفحه کامل کالا <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
                 <div class="offer-list" id="offerList"></div>
-                <div class="modal-disclaimer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m12 4 9 16H3L12 4Z"/><path d="M12 9v5M12 17h.01" stroke-linecap="round"/></svg><span>این اطلاعات آزمایشی است. سامانه در معامله بین خریدار و فروشنده مسئولیتی ندارد؛ قبل از پرداخت، کالا، قیمت و شرایط را بررسی کنید.</span></div>
+                <div class="modal-disclaimer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m12 4 9 16H3L12 4Z"/><path d="M12 9v5M12 17h.01" stroke-linecap="round"/></svg><span>قبل از پرداخت، کالا، قیمت، اصالت و شرایط معامله را مستقیماً با فروشنده بررسی کنید.</span></div>
             </div>
         </div>
     </div>

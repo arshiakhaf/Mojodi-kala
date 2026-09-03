@@ -61,11 +61,10 @@ foreach ($products as $product) {
 
 echo json_encode([
     'ok' => true,
-    'demo' => true,
     'data' => $products,
     'meta' => [
         'products' => count($products),
         'offers' => $offers,
-        'message' => 'این API در نسخه نمونه آماده اتصال به فرانت‌اند و اپلیکیشن WebView است.',
+        'message' => 'این API آماده اتصال به فرانت‌اند و اپلیکیشن WebView است.',
     ],
 ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
